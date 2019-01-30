@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Decision Tree (CART)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="../../../Dependences/numjs-master/dist/numjs.js"></script>
+    <script src="../../../Dependences/p5/p5.min.js"></script>
+    <script src="../../../Dependences/p5/addons/p5.dom.min.js"></script>
+    <script src="Source/Utils/gen_data.js"></script>
+
+
+    <script src="Source/Raw_DecisionTree/decision_tree.js"></script>
+
+    <!-- INTERACTION:- -->
+
+    <script src="Source/Interactive/Input_Space/interactive_inputspace.js"></script>
+    <script src="Source/Interactive/DTree_Viz/tree_Visualizer.js"></script>
+    <script src="Source/Interactive/main.js"></script>
+
+    <style>
+        body{
+            display:block;
+            margin: 0px;
+
+            background-color: gray;
+
+        }
+
+        #cvs{
+            display:flex;
+            position:relative;
+            padding: 30px 0px;
+            justify-content: center;
+            margin: auto;
+        }
+        #Control_Panel{
+            display:flex;
+            margin:0;
+            background-color:red;
+            width: 200px;
+            height:1000px;
+        }
+
+        #cvs2{
+            <!-- display:flex; -->
+            position:relative;
+            padding: 30px 0px;
+            justify-content: center;
+            margin: 100px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div id="Control_Panel">this</div> -->
+    <!-- <div id="cvs2"></div> -->
+    <div id="cvs"></div>
+    <div id="cvs2"></div>
+
+</body>
+</html>
